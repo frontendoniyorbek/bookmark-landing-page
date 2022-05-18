@@ -56,9 +56,14 @@ img{
     height: auto;
 }
 
+*:focus {
+    outline: 2px dashed var(--blue-color);
+    outline-offset: 3px;
+}
+
 .button {
+    display: inline-block;
     padding: 10px 24px;
-    text-transform: uppercase;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -105,6 +110,7 @@ img{
 }
 
 .site-header__button:hover {
+    border: 2px solid var(--dark-color);
     color: var(--dark-color);
     background-color: transparent;
 }
@@ -126,18 +132,12 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     position: relative;
+    padding-top: 131px;
+    padding-bottom: 150px;
     flex-grow: 1;
-}
-
-.main-content::before {
-    position: absolute;
-    top: 242px;
-    left: 925px;
-    width: 1000px;
-    height: 352px;
-    border-radius: 316.5px;
-    background-color: var(--blue-color);
-    content: "";
+    background-image: url(../img/main-bg.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 460px) 197px;
 }
 
 
@@ -187,6 +187,7 @@ img{
 }
 
 .sitenav__link {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--write-color);
@@ -209,8 +210,7 @@ img{
 /* HERO */
 .hero {
     position: relative;
-    padding-top: 68px;
-    padding-bottom: 68px;
+    margin-bottom: 180px;
 }
 
 .hero__inner {
@@ -238,8 +238,8 @@ img{
 
 .hero__img {
     position: absolute;
-    top: 42px;
-    right: 93px;
+    top: -108px;
+    left: 770px;
     width: 574px;
     height: 382px;
     object-fit: cover;
