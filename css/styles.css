@@ -64,18 +64,42 @@ img{
     font-size: 14px;
     line-height: 28px;
     color: #fff;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.25px;
     background-color: var(--blue-color);
-    border: 2px solid var(--dark-color);
     border-radius: 5px;
+    border: 2px solid transparent;
     box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
     cursor: pointer;
+    transition: background-color .3s ease, color .2s ease, border .3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: var(--blue-color);
+    border: 2px solid var(--blue-color);
+}
+
+.hero__buton {
+    margin-right: 16px;
+}
+
+.hero__link {
+    margin: 0;
+    background-color: #f7f7f7;
+    color: var(--write-color);
+}
+
+.hero__link:hover {
+    background-color: #fff;
+    border: 2px solid #5B6074;
+    color: var(--write-color);
 }
 
 .site-header__button {
     font-size: 13px;
     line-height: 17px;
     padding: 12px 32px 11px 34px;
+    border: 2px solid var(--dark-color);
     background-color: var(--dark-color);
     transition: background-color .3s ease, opacity .3s ease;
 }
@@ -101,7 +125,19 @@ img{
 
 /* MAIN-CONTENT */
 .main-content{
+    position: relative;
     flex-grow: 1;
+}
+
+.main-content::before {
+    position: absolute;
+    top: 242px;
+    left: 925px;
+    width: 1000px;
+    height: 352px;
+    border-radius: 316.5px;
+    background-color: var(--blue-color);
+    content: "";
 }
 
 
@@ -167,4 +203,44 @@ img{
 
 .sitenav__link:active {
     opacity: 0.6;
+}
+
+
+/* HERO */
+.hero {
+    position: relative;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.hero__inner {
+    max-width: 540px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+    color: var(--write-color);
+}
+
+.heo__text {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.hero__button-wrapper {
+    display: flex;
+}
+
+.hero__img {
+    position: absolute;
+    top: 42px;
+    right: 93px;
+    width: 574px;
+    height: 382px;
+    object-fit: cover;
 }
