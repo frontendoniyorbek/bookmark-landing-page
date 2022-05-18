@@ -134,12 +134,6 @@ img{
     opacity: 0.6;
 }
 
-.logo__img {
-    width: 149px;
-    height: 25px;
-    object-fit: cover;
-}
-
 .sitenav {
     margin-left: 20px;
     margin-right: 48px;
