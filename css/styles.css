@@ -26,8 +26,6 @@
 }
 
 
-
-
 /* GLOBAL */
 html{
     box-sizing: border-box;
@@ -58,6 +56,39 @@ img{
     height: auto;
 }
 
+.button {
+    padding: 10px 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    background-color: var(--blue-color);
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    cursor: pointer;
+}
+
+.site-header__button {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 12px 32px 11px 34px;
+    background-color: var(--dark-color);
+    transition: background-color .3s ease, opacity .3s ease;
+}
+
+.site-header__button:hover {
+    color: var(--dark-color);
+    background-color: transparent;
+}
+
+.site-header__button:active {
+    opacity: 0.6;
+}
+
 /* CONTAINER */
 .container{
     width: 100%;
@@ -71,4 +102,75 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.site-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__logo {
+    margin-right: 482px;
+}
+
+.logo {
+    display: inline-block;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+.logo__img {
+    width: 149px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.sitenav {
+    margin-left: 20px;
+    margin-right: 48px;
+}
+
+.sitenav__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 44px;
+}
+
+.sitenav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--write-color);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    line-height: 17px;
+    transition: color .3s ease, opacity .3s ease;
+}
+
+.sitenav__link:hover {
+    color:var(--dark-color);
+}
+
+.sitenav__link:active {
+    opacity: 0.6;
 }
