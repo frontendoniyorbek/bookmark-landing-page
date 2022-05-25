@@ -43,6 +43,7 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -248,4 +249,130 @@ img{
     height: 382px;
     object-fit: contain;
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+/* FEATURES */
+.section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.features__section-info {
+    margin-bottom: 75px;
+}
+
+.section__info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+}
+
+.section__titile {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    color: var(--write-color);
+    letter-spacing: -0.1px;
+}
+
+.section__description {
+    margin:0;
+    color: rgb(36, 42, 69, 0.5);
+}
+
+
+/* TABS */
+.tabs__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs__item {
+    width: 243px;
+    border-bottom:1px solid rgba(73, 93, 207, 0.2);
+}
+
+.tabs__link--active .tabs__link {
+    border-color: #fa5959;
+    color: var(--write-color);
+}
+
+.tabs__link {
+    display: block;
+    padding-bottom: 27px;
+    border-bottom: 4px solid transparent;
+    color: rgb(36, 42, 69, 0.75);
+    text-align: center;
+    letter-spacing: 0.533333px;
+    mix-blend-mode: normal;
+    font-size: 16px;
+    line-height: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease, opacity .3s ease;
+}
+
+.tabs__link:hover {
+    color: var(--dark-color);
+}
+
+.tabs__link:active {
+    opacity: 0.6;
+}
+
+.tabs__panels {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image: url(../img/blue-pill-bg.svg);
+    background-repeat:no-repeat;
+    background-position: calc(50% - 800px) 156px;
+}
+
+.tabs__panel {
+    display: none;
+}
+
+.tabs__panel--active {
+    display: block;
+}
+.features-tab-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features-tab-panel__img {
+    width: 536px;
+    height: 346px;
+    margin-right: 24px;
+    object-fit: contain;
+}
+
+.features-tab-panel__info {
+    width: 100%;
+    max-width: 445px;
+}
+
+.features-tab-panel__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    color: var(--write-color);
+}
+
+.features-tab-panel__text {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: rgb(36, 42, 69, 0.5);
 }
