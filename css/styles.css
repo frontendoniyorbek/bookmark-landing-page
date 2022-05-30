@@ -314,10 +314,6 @@ img{
     border-bottom:1px solid rgba(73, 93, 207, 0.2);
 }
 
-.tabs__link--active .tabs__link {
-    border-color: #fa5959;
-    color: var(--write-color);
-}
 
 .tabs__link {
     display: block;
@@ -332,6 +328,11 @@ img{
     text-decoration: none;
     cursor: pointer;
     transition: color .3s ease, opacity .3s ease;
+}
+
+.tabs__link--active .tabs__link {
+    border-color: var(--dark-color);
+    color: var(--write-color);
 }
 
 .tabs__link:hover {
