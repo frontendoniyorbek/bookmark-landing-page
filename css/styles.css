@@ -364,7 +364,7 @@ img{
     transition: color .3s ease, opacity .3s ease;
 }
 
-.tabs__link--active .tabs__link {
+.tabs__item--active .tabs__link {
     border-color: var(--dark-color);
     color: var(--write-color);
 }
